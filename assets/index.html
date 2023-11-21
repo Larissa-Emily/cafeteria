@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Hora do café</title>
+  </head>
+  <body>
+    <section class="nav-menu">
+      <div class="logo">
+        <h3>Hora do café</h3>
+      </div>
+      <div class="container">
+        <div class="menu-icon">
+          <i class="bi bi-list"></i>
+          <div class="menu-list">
+            <i class="bi bi-x"></i>
+            <ul>
+              <li>Cafés</li>
+              <li>Grãos</li>
+              <li>Entrega</li>
+              <li>Contato</li>
+              <li>Mais produtos</li>
+            </ul>
+          </div>
+        </div>
+        <div class="carrinho">
+          <i class="bi bi-cart2"></i>
+        </div>
+        <div class="areaCarrinho">
+          <i class="bi bi-x bi-car-x"></i>
+          <p>Total: R$<span id="total">0.00</span></p>
+
+          <h3>Seus produtos:</h3>
+
+          <button>fechar compra</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="text-main">
+        <h1>Hora do Café</h1>
+        <h3>
+          Não há nada melhor do que o encantador aroma do café que flui para a
+          sua manhã sonolenta
+        </h3>
+      </div>
+    </section>
+    <section class="explorer">
+      <h1>Cardapio</h1>
+      <h2>Encontre seu café favorito</h2>
+      <div class="content">
+        <div class="coffes">
+          <div class="img">
+            <img src="/image/img_text_908x596_crop_top.webp" />
+          </div>
+          <div class="info">
+            <p class="descrition">
+              O Dukes Espresso Blend é o nosso café básico. É doce, versátil e
+              complexo, pensado para ser apreciado preto e com leite.
+            </p>
+            <span>R$5,00</span>
+            <button
+              class="but-car"
+              onclick="adicionaCarrinho('Expresso básico', 5.00 )"
+            >
+              Adicionar ao carrinho
+            </button>
+          </div>
+        </div>
+        <div class="coffes">
+          <div class="img">
+            <img src="/image/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" />
+          </div>
+          <div class="info">
+            <p class="descrition">
+              O famoso capuccino, mistura de café com um leite bem cremoso e
+              vaporizado, mais espuma. Tornando uma versão bem diferenciada.
+            </p>
+            <span>R$18,00</span>
+            <button
+              class="but-car"
+              onclick="adicionaCarrinho('Capuccino', 18.00)"
+            >
+              Adicionar ao carrinho
+            </button>
+          </div>
+        </div>
+        <div class="coffes">
+          <div class="img">
+            <img src="/image/bolo1.jpg" />
+          </div>
+          <div class="info">
+            <p class="descrition">
+              Bolo simples sem sabor, com uma cobertura de laranja para dar
+              quele sabor especial.
+            </p>
+            <span>R$10,00</span>
+
+            <button
+              class="but-car"
+              onclick="adicionaCarrinho('Bolo simples', 10.00)"
+            >
+              Adicionar ao carrinho
+            </button>
+          </div>
+        </div>
+        <div class="coffes">
+          <div class="img">
+            <img src="/image/bolo2.jpg" />
+          </div>
+          <div class="info">
+            <p class="descrition">
+              Delicioso bolo de brownie, com camadas de creme de chocolate
+              belga.
+            </p>
+            <span>R$22,90</span>
+
+            <button
+              class="but-car"
+              onclick="adicionaCarrinho('Bolo de Brownie', 22.90)"
+            >
+              Adicionar ao carrinho
+            </button>
+          </div>
+        </div>
+        <div class="coffes">
+          <div class="img">
+            <img src="/image/bolo3.jpg" />
+          </div>
+          <div class="info">
+            <p class="descrition">
+              Bolo de geleia de frutas vermelhas e um creme entre as camadas.
+            </p>
+            <span>R$25,00</span>
+
+            <button
+              class="but-car"
+              onclick="adicionaCarrinho('Bolo frutas vermelhas', 25.00)"
+            >
+              Adicionar ao carrinho
+            </button>
+          </div>
+        </div>
+        <div class="coffes">
+          <div class="img">
+            <img src="/image/torta.jpg" />
+          </div>
+          <div class="info">
+            <p class="descrition">
+              Torta com bastante frango desfiado, catupiri com requeijão
+              cremoso.
+            </p>
+            <span>R$15,00</span>
+
+            <button class="but-car" onclick="adicionaCarrinho('Torta de frango', 15.00)">
+              Adicionar ao carrinho
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="outro-cardapio">
+        <h1>Outras opçoẽs</h1>
+        <div class="list-cardapio">
+          <div class="cardapio">
+            <img src="/image/16-3thumb.jpg" />
+            <p>Chocolates</p>
+          </div>
+          <div class="cardapio">
+            <img src="/image/17-3thumb.jpg" />
+            <p>Paẽs de queijo</p>
+          </div>
+          <div class="cardapio">
+            <img src="/image/19-2thumb.jpg" />
+            <p>Sanduíches</p>
+          </div>
+        </div>
+      </div>
+      <div class="list">
+        <ul>
+          <li>
+            <strong>Croque Monsieur Tradicional</strong>
+            <p>Pão, cream cheese, brie, parma e mussarela</p>
+          </li>
+          <li>
+            <strong>Pão com Manteiga</strong>
+          </li>
+          <li>
+            <strong>Supreme</strong>
+            <p>Pão, geleia de figo, queijo brie e presunto de parma.</p>
+          </li>
+          <li>
+            <strong>Queijo Quente Especial</strong>
+            <p>Pão, Catupiry e mussarela.</p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <strong>Croque Monsieur Linguiça Blumenau</strong>
+            <p>
+              Pão, cream cheese, brie, linguiça Blumenau, molho especial e
+              mussarela.
+            </p>
+          </li>
+          <li>
+            <strong>Sanduíche Light</strong>
+            <p>Pão integral, Catupiry, peito de peru e mussarela</p>
+          </li>
+          <li>
+            <strong>Caprese</strong>
+            <p>
+              Pão, rúcula, mussarela de búfala, maionese, molho italiano e
+              tomate seco.
+            </p>
+          </li>
+          <li>
+            <strong>Torrada Petrópolis</strong>
+            <p>Disponível apenas no Rio de Janeiro.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="location">
+      <h2>Nossos endereços</h2>
+      <div class="store-location">
+        <div class="address">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <p>Rio de Janeiro</p>
+        </div>
+  
+        <div class="address">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <p>Minas Gerais</p>
+        </div>
+        <div class="address">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <p>São Paulo</p>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <ul>
+        <li>Contatos:</li>
+        <li>(00)000000000</li>
+      </ul>
+      <ul>
+        <li><i class="bi bi-instagram"></i></li>
+        <li><i class="bi bi-facebook"></i></li>
+        <li><i class="bi bi-whatsapp"></i></li>
+      </ul>
+    </section>
+  </body>
+</html>
